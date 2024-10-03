@@ -5,28 +5,25 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
-        enunciado: Oportunidade de estudo, situaçoesque permite as pessoas adquerir um novo conhecimento.Estudar em uma universidade publica é melhor do que uma privada?
+    {
+        enunciado:" Oportunidade de estudo, situaçoesque permite as pessoas adquerir um novo conhecimento.Estudar em uma universidade publica é melhor do que uma privada?",
         alternativas: [
             {
-                texto: "A Univeraidades, publicas oferece mais oportunidades",
-                afirmacao: "Sim  "
+                texto: "Sim, a univeraidades, publicas oferece mais oportunidades",
             },
             {
-                texto: "A Universidade privada muitas das vezes não oferecem muitos recursos",
-                afirmacao: "Não"
+                texto: "Não, a Universidade privada muitas das vezes não oferecem muitos recursos",
             }
         ]
     },
     {
         enunciado: "Vale a pena envestir em curso na modalidade EAD(Educaçaõ a Distancia)",
-        alternativas: 
+        alternativas: [
             {
-                texto: "Oferece flexibiliade e a oportunidade de aprender no seu proprio ritimo",
-                afirmacao: "Sim"
+                texto: "Sim, oferece flexibiliade e a oportunidade de aprender no seu proprio ritimo",
             },
             {
-                texto: "Falta de enteração pessoal pode dificultar a aprendizagem pratica",
-                afirmacao: "Não"
+                texto: "Não, falta de enteração pessoal pode dificultar a aprendizagem pratica",
             }
         ]
     },
@@ -74,7 +71,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "Ter uma oportunidade de estudo é uma das experiencias mais valiosas que uma pessoa pode ter. Esse chão não apenas abre portas para o conhecimento e desenvolvimento proficional mas também enriquecea a vida pessoal promovendo o crecimento interlectual e emocional. O acesso a educação proporciona ferramentas exenciais para emfrentar desafios e tomar decisoẽs informadasno futuro.";
+let historiaFinal = "Ter uma oportunidade de estudo é uma das experiencias mais valiosas que uma pessoa pode ter. Esse chão não apenas abre portas para o conhecimento e desenvolvimento proficional mas também enriquecea a vida pessoal promovendo o crecimento interlectual e emocional. O acesso a educação proporciona ferramentas exenciais para emfrentar desafios e tomar decisoẽs informadasno futuro."
 
 function mostraPergunta() {
     if (atual >= perguntas.length) {
